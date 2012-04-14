@@ -10,15 +10,6 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 //---------------------------------------------------------------------------
-__fastcall TBookmarks::TBookmarks(): TObject()
-{
-  FSharedKey = TNamedObjectList::HiddenPrefix + L"shared";
-  FBookmarkLists = new TStringList();
-  FBookmarkLists->Sorted = true;
-  FBookmarkLists->CaseSensitive = false;
-  FBookmarkLists->Duplicates = dupError;
-}
-//---------------------------------------------------------------------------
 __fastcall TBookmarks::~TBookmarks()
 {
   Clear();
