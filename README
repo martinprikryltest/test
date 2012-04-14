@@ -5,7 +5,7 @@ Development Environment Setup
 
 2.  Build MFC. See `release/data/readme_mfc.txt`
 
-    For source code from Borland C++ Builder 6, see `release\libs\mfc`
+    For source code from C++ Builder 6, see `release\libs\mfc`
 
 3.  Build OpenSSL
 
@@ -15,7 +15,7 @@ Development Environment Setup
         mkdir source\openssl\openssl
         copy release\libs\openssl\openssl\*.* source\openssl\openssl
 
-4.  Run C++ Builder XE2
+4.  Run C++ Builder
 
 5.  Set following environment variables user overrides 
 
@@ -25,12 +25,11 @@ Development Environment Setup
         FINAL_PATH=<path to generate final files to, can be set to .>
         WINSCPTRACE=off (to turn off tracing while debugging)
 
-6.  Copy `ssleay32.lib` and `libeay32.lib` to from `release\libs\lib` into
-    `%INTERM_PATH%\Debug` and `%INTERM_PATH%\Release`
+6.  Copy `ssleay32.lib` and `libeay32.lib` to INTERM_PATH\Debug and INTERM_PATH\Release
 
-7.  Open `source\WinSCP.groupproj`
+7.  Open `WinSCP.groupproj`
 
-8.  Build and Install all `.bpl` projects
+8.  Build and install all `.bpl` projects
 
 9.  Force rebuild of `RScpComp.lib`
     (it shares intermediate output files with `DScpComp.lib`)
