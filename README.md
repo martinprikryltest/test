@@ -2,3 +2,4 @@
 two
 three
 pull
+squash
